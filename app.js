@@ -6,8 +6,8 @@
  * Never put Supabase service-role keys or Stripe secret keys in this file.
  */
 const CONFIG = Object.freeze({
-  SUPABASE_URL: "YOUR_SUPABASE_URL",
-  SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_KEY",
+  SUPABASE_URL: https://hphfvlgzjsvgmaictwiu.supabase.co,
+  SUPABASE_ANON_KEY: sb_publishable_aJ2dYT0bBT7PZgHSPmh5Ng_r39vTdOn,
   STRIPE_BUY_BUTTON_ID: "YOUR_STRIPE_BUY_BUTTON_ID",
   STRIPE_PUBLISHABLE_KEY: "YOUR_STRIPE_PUBLISHABLE_KEY"
 });
@@ -92,9 +92,7 @@ async function createEnrollment(payload) {
     response = await fetch(`${baseUrl}/rest/v1/rpc/create_enrollment`, {
       method: "POST",
       headers: {
-        apikey: CONFIG.SUPABASE_ANON_KEY,
-        Authorization: `Bearer ${CONFIG.SUPABASE_ANON_KEY}`,
-        "Content-Type": "application/json"
+      apikey: CONFIG.SUPABASE_ANON_KEY, "Content-Type": "application/json"
       },
       body: JSON.stringify({
         p_first_name: payload.first_name,
