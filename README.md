@@ -97,12 +97,14 @@ Replace the two labeled placeholders in the `CONFIG` block at the top of `app.js
 ## 2. Configure Stripe in test mode
 
 1. Switch the Stripe Dashboard to **Test mode**.
-2. Create the Acme Launch product and $499 price, then create its Payment Link. The product offered in the form must match this Payment Link.
+2. Create a test-mode Payment Link using **Customers choose what to pay**. Configure an appropriate suggested, minimum, and maximum amount, then generate its Buy Button.
 3. From the Payment Link, choose **Buy button** and copy its `buy-button-id`.
 4. Copy the test publishable key from **Developers → API keys**.
 5. Replace `YOUR_STRIPE_BUY_BUTTON_ID` and `YOUR_STRIPE_PUBLISHABLE_KEY` in the `CONFIG` block in `app.js`.
 
 The button receives the Supabase UUID as `client-reference-id` and the submitted email as `customer-email`. Never place an `sk_test_…` or `sk_live_…` secret key in this repository.
+
+Customer-chosen Payment Links support one-time payments only and cannot be combined with other line items, recurring billing, promotion codes, or discounts.
 
 ### Payment verification webhook
 
