@@ -31,7 +31,15 @@ create table public.enrollments (
   company text not null check (char_length(company) between 1 and 120),
   product text not null check (product = 'launch'),
   consent boolean not null check (consent is true),
-  payment_status text not null default 'pending' check (payment_status in ('pending', 'paid', 'failed', 'refunded')),
+  payment_status text not null default 'not_verified'
+  check (
+    payment_status in (
+      'not_verified',
+      'paid',
+      'failed',
+      'refunded'
+    )
+  ),
   created_at timestamptz not null default now()
 );
 
