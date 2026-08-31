@@ -8,7 +8,7 @@
 const CONFIG = Object.freeze({
   SUPABASE_URL: "https://hphfvlgzjsvgmaictwiu.supabase.co",
   SUPABASE_ANON_KEY: "sb_publishable_aJ2dYT0bBT7PZgHSPmh5Ng_r39vTdOn",
-  STRIPE_BUY_BUTTON_ID: ""buy_btn_1UAcenS3NlNzcIVFmSiUwdRS",
+  STRIPE_BUY_BUTTON_ID: "buy_btn_1UAcenS3NlNzcIVFmSiUwdRS",
   STRIPE_PUBLISHABLE_KEY: "pk_test_51UAcWDS3NlNzcIVFHguWkVKuN5N1IvgU94Uoy6aHF1hwKZcuOyn6OYC0yRjsXxKc0ZsZNNbc0tiP9CwOfweJDqNF00DXzWVSUw"
 });
 
