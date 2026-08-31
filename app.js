@@ -6,8 +6,8 @@
  * Never put Supabase service-role keys or Stripe secret keys in this file.
  */
 const CONFIG = Object.freeze({
-  SUPABASE_URL: https://hphfvlgzjsvgmaictwiu.supabase.co,
-  SUPABASE_ANON_KEY: sb_publishable_aJ2dYT0bBT7PZgHSPmh5Ng_r39vTdOn,
+  SUPABASE_URL: "https://hphfvlgzjsvgmaictwiu.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_aJ2dYT0bBT7PZgHSPmh5Ng_r39vTdOn",
   STRIPE_BUY_BUTTON_ID: "YOUR_STRIPE_BUY_BUTTON_ID",
   STRIPE_PUBLISHABLE_KEY: "YOUR_STRIPE_PUBLISHABLE_KEY"
 });
